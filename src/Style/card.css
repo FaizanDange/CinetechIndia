@@ -1,0 +1,113 @@
+/* Card.css */
+
+
+.CardMain {
+  background-color: #f2f2f2; /* Light gray background color */
+  padding: 20px; /* Add padding for better spacing on mobile */
+  margin-left: 10px; /* Adjust margin as needed for mobile */
+  margin-right: 10px; /* Adjust margin as needed for mobile */
+}
+
+
+.classHeader{
+  /* margin-top: 50px; */
+  margin-top: 100px;
+  margin-left: 370px;
+}
+
+
+.card-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(20.33% - 20px); /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  background-color: #3498db; /* Blue background on hover */
+}
+
+.logo {
+  max-width: 100%;
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+
+.card-content {
+  padding: 16px;
+  text-align: left; /* Align text to the left */
+}
+
+.card-content h4 {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-content p {
+  color: #555;
+  line-height: 1.8;
+}
+
+
+.CardButton {
+  margin-left: 370px;
+  margin-top: 20px;
+}
+
+.CardButton button {
+  width: 180px;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.CardButton button:hover {
+  background-color: #2980b9;
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 768px) {
+
+  .CardMain {
+    height: auto; /* Adjust height as needed for mobile */
+    margin-left: 10px; /* Adjust margin as needed for mobile */
+    margin-right: 10px; /* Adjust margin as needed for mobile */
+  }
+
+  .classHeader{ 
+    margin-left: 170px;
+  }
+
+  .CardButton {
+    margin-left: 5%;
+  }
+
+  .card1 {
+    width: calc(50% - 20px);
+  }
+
+  .CardButton{
+    margin-left: 170px;
+  }
+}

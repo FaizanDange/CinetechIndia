@@ -1,0 +1,46 @@
+/* Add your styles here */
+.footer-container {
+    margin-top: 150px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyright {
+    margin: 0;
+    margin-left: 200px;
+  }
+  
+  .social-icons {
+    margin-right: 200px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Media query for screens with a maximum width of 600 pixels (typical mobile devices) */
+  @media (max-width: 600px) {
+    .footer-container {
+      flex-direction: column; /* Change to column for mobile view */
+      align-items: center; /* Center content horizontally for mobile view */
+    }
+  
+    .copyright {
+      margin: 10px 0; /* Add margin for better spacing in mobile view */
+      text-align: center; /* Center text for mobile view */
+      margin-left: 0; /* Reset margin for other views */
+    }
+  
+    .social-icons {
+      margin-top: 10px; /* Add margin for better spacing in mobile view */
+      margin-right: 0; /* Reset margin for other views */
+    }
+  }
+  

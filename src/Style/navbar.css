@@ -1,0 +1,162 @@
+/* Navbar.css */
+body {
+  margin: 0; /* Remove default margin to ensure full-width */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Set a higher z-index for the fixed navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(2, 3, 129);
+  color: white;
+}
+
+.navbar-right p {
+  color: white;
+  text-align: right;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+  
+.navbar-right p span {
+    margin-right: 5px; /* Adjust the margin as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+.navbar-left .logo {
+    margin-right:  20px;
+}
+  
+.logo {
+    max-width: 80px; /* Adjust the logo size as needed */
+    margin-right: 20px; /* Adjust the margin as needed to move it a bit to the right */
+}
+  
+.navbar-center {
+    flex-grow: 1;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.nav-list li {
+    margin: 0 15px;
+}
+  
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; /* Adjust the font size of nav-list as needed */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+.navbar-right {
+    
+    text-align: right;
+    margin-right: 20px;
+}
+  
+  /* Increase height and font size for desktop view */
+@media (min-width: 769px) {
+    .navbar {
+      padding: 1.5rem;
+      height: 80px; /* Adjust the height as needed */
+    }
+  
+    .nav-list a {
+      font-size: 18px; /* Increase the font size for desktop */
+    }
+  
+    .navbar-right p {
+      font-size: 16px; /* Adjust the font size of contact number as needed */
+    }
+}
+
+
+/* ... (Previous styles) */
+
+/* Navbar.css */
+/* ... (Previous styles) */
+
+.toggle-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.toggle-btn.active {
+  right: calc(100% - 40px);
+}
+  
+  /* Show the toggle button on smaller screens */
+  @media (max-width: 768px) {
+    .toggle-btn {
+      display: block;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Initially hide the toggle slider on mobile */
+      height: 100vh;
+      width: 80%;
+      max-width: 300px; /* Adjust the max-width as needed */
+      background-color: rgb(122,220,180);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: right 0.3s ease; /* Change transition property to 'right' */
+      order: 1; /* Move the nav-list to the left on mobile */
+    }
+  
+    .nav-list.active {
+      right: 0;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .navbar-right {
+      display: none; /* Initially hide the right side contact on mobile */
+    }
+  }
+  
+  /* Show the right side contact on larger screens */
+  @media (min-width: 769px) {
+    .toggle-btn {
+      display: none;
+    }
+  
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      height: 80px;
+    }
+  }

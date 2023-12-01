@@ -1,0 +1,47 @@
+/* sliderheader.css */
+
+.slider-header {
+  background-color: #3498db; /* Blue background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  margin-top: 100px;
+  padding: 80px; /* Adjust padding as needed */
+  height: 300px; /* Adjust height as needed */
+}
+
+.header-text {
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+.header-text .header-title {
+  margin-top: -10px;
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.header-text .header-subtitle {
+  font-size: 26px; /* Adjust the font size as needed */
+  line-height: 1.8;
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 768px) {
+  .slider-header {
+    padding: 40px; /* Adjust padding for better spacing on mobile */
+    height: auto; /* Adjust height for better spacing on mobile */
+  }
+
+  .header-text {
+    max-width: 100%; /* Take full width on mobile view */
+  }
+
+  .header-text .header-title {
+    font-size: 16px; /* Adjust the font size for mobile view */
+    margin-bottom: 15px; /* Adjust the margin for better spacing on mobile */
+  }
+
+  .header-text .header-subtitle {
+    font-size: 20px; /* Adjust the font size for mobile view */
+  }
+}
